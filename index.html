@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Hamburgueria</title>
+    
+    <link 
+        rel="stylesheet" 
+        href="styles/output.css" 
+    />
+
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+
+</head>
+<body>
+
+    <!-- COMEÇO HEADER-->
+    <header class="w-full h-[420px] bg-zinc-950 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+                src="./assets/hamb-1.png" 
+                alt="Logo DevBurg" 
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+            <h1 class="text-3xl text-white mt-4 mb-2 font-bold ">
+                F&G Hamburgueria
+            </h1>
+
+            <span class="text-white font-medium">Rua Frederico Tietze, Santa Cruz do Sul - RS</span>
+
+            <div class="bg-green-600 px-4 py-1 mt-2 rounded text-white font-medium" id="date-span">
+                <span>Seg à Dom - 18:00 as 22:00</span>
+            </div>
+        </div>
+
+    </header>
+    <!-- FIM HEADER-->
+
+    <!-- COMEÇO MAIN-->
+    <h2 class="text-2xl md:text-3xl text-center font-bold mt-9 mb-6 ">Cardápio:</h1>
+    <div id="menu">
+        
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-12 mx-auto max-w-7xl px-2 mb-6">
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/hamb-1.png" 
+                    alt="Hamburger Smash" 
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="">
+                    <p class="font-bold">Hamburger Smash</p>
+                    <p class="text-sm ">Ele é composto por um disco de carne moída, geralmente de boi, que é grelhado e servido em um pão.</p>
+                    <div class="flex items-center gap-2 mt-2 justify-between ">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button 
+                            class="bg-gray-900 py-1 px-5 rounded add-to-cart-btn"
+                            data-name="Hamburger Smash"
+                            data-price="18.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+            
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/hamb-2.png" 
+                    alt="Hamburger Duplo" 
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="">
+                    <p class="font-bold">Hamburger Duplo</p>
+                    <p class="text-sm ">Ele é composto por um disco de carne moída, geralmente de boi, que é grelhado e servido em um pão.</p>
+                    <div class="flex items-center gap-2 mt-2 justify-between ">
+                        <p class="font-bold text-lg">R$ 32.90</p>
+                        <button 
+                            class="bg-gray-900 py-1 px-5 rounded add-to-cart-btn"
+                            data-name="Hamburger Duplo"
+                            data-price="32.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/hamb-3.png" 
+                    alt="Hamburger Simples" 
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="">
+                    <p class="font-bold">Hamburger Simples</p>
+                    <p class="text-sm ">Ele é composto por um disco de carne moída, geralmente de boi, que é grelhado e servido em um pão.</p>
+                    <div class="flex items-center gap-2 mt-2 justify-between ">
+                        <p class="font-bold text-lg">R$ 16.90</p>
+                        <button 
+                            class="bg-gray-900 py-1 px-5 rounded add-to-cart-btn"
+                            data-name="Hamburger Simples"
+                            data-price="16.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/hamb-4.png" 
+                    alt="Hamburger Salada" 
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="">
+                    <p class="font-bold">Hamburger Salada</p>
+                    <p class="text-sm ">Ele é composto por um disco de carne moída, geralmente de boi, que é grelhado e servido em um pão.</p>
+                    <div class="flex items-center gap-2 mt-2 justify-between ">
+                        <p class="font-bold text-lg">R$ 15.90</p>
+                        <button 
+                            class="bg-gray-900 py-1 px-5 rounded add-to-cart-btn"
+                            data-name="Hamburger Salada"
+                            data-price="15.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+        </main>
+        <!-- FIM MAIN-->
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </div>
+
+        <!-- GRID BEBIDAS-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-12 mx-auto max-w-7xl px-2 mb-6" id="menu">
+            
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/refri-1.png" 
+                    alt="Coca-cola Lata" 
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Coca-cola Lata</p>
+                    <p class="text-sm ">Refrigerante sabor Cola</p>
+                    <div class="flex items-center gap-2 mt-2 justify-between ">
+                        <p class="font-bold text-lg">R$ 6</p>
+                        <button 
+                            class="bg-gray-900 py-1 px-5 rounded add-to-cart-btn"
+                            data-name="Coca-cola Lata"
+                            data-price="6"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+            
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/refri-2.png" 
+                    alt="Guaraná Lata" 
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Lata</p>
+                    <p class="text-sm ">Refrigerante sabor Guaraná</p>
+                    <div class="flex items-center gap-2 mt-2 justify-between ">
+                        <p class="font-bold text-lg">R$ 5.90</p>
+                        <button 
+                            class="bg-gray-900 py-1 px-5 rounded add-to-cart-btn"
+                            data-name="Guarana Lata"
+                            data-price="5.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+        </div>
+        <!-- FIM GRID BEBIDAS-->
+    
+    </div>
+    <!--FIM MENU-->
+
+    <!-- MODAL -->
+
+    <!-- FIM MODAL -->
+     <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+            </div>
+
+            <p class="font-bold">Total: <span class="" id="cart-total">0.00</span></p>
+            
+            <p class="font-bold mt-4">Endereço de entrega: </p>
+            <input 
+                type="text" 
+                placeholder="Digite seu endereço de entrega"
+                id="address"
+                class="w-full border-2 p-1 rounded my-1"
+            >
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+            
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-model-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+     </div>
+    <!-- COMEÇO FOOTER-->
+    <footer class=" w-full bg-red-500 py-4 fixed bottom-0 z-40 flex items-center justify-center">
+        <button 
+            class="flex items-center gap-2 text-white font-bold" 
+            id="cart-btn"
+        >
+            ( <span id="cart-count" class="">0</span> )
+            Ver meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- COMEÇO FOOTER-->
+</body>
+</html>
